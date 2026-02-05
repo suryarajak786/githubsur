@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Grammar & Clarity Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 AI Grammar & Clarity Checker</h1>
+            <p>Enter your text below to get an instant grammar check.</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>Enter Your Paragraph</h2>
+                <textarea 
+                    id="inputText" 
+                    placeholder="Paste or type your paragraph here..."
+                    rows="8"
+                ></textarea>
+                <button id="checkBtn" class="check-btn">Check Grammar & Clarity</button>
+            </section>
+
+            <section class="results-section" id="resultsSection">
+                   <div class="comparison-container">
+                    <div class="comparison-column before-column">
+                        <h3>❌ Before (With Errors)</h3>
+                        <div class="text-box" id="beforeText"></div>
+                    </div>
+
+                    <div class="comparison-column after-column">
+                        <h3>✅ After (Corrected)</h3>
+                        <div class="text-box" id="afterText"></div>
+                        <button id="copyBtn" class="copy-btn">📋 Copy Corrected Text</button>
+                    </div>
+                </div>
+
+                <div class="issues-section" id="issuesSection">
+                    <h3>🔍 Issues Found & Corrections</h3>
+                    <div id="issuesList"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
